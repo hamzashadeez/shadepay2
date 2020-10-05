@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
+body {
+  background-color: #f6f6f6;
+  overflow: scroll;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ico {
+  width: 35px;
+  margin: 0 10px;
+}
+.controls {
+  display: flex;
+  margin-top: -100px;
+  align-items: center;
+  justify-content: end;
+  padding: 5px 20px;
+}
+
+.logotitle {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #0b132a;
+  font-size: 20px;
+  line-height: 24px;
+}
+.board {
+  display: flex;
+}
+.sides {
+  flex: 1;
+  padding: 20px;
+}
+.sides > img {
+  width: 100%;
+  object-fit: contain;
+  margin: 20px;
+}
+.explore {
+  border: none;
+  padding: 8px 38px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  max-width: 180px;
+  background: #f53838;
+}
+.explore:hover {
+  opacity: 0.8;
+}
+.notes {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.notes > h1 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 70px;
+  color: #0b132a;
+}
+.subhead {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #555555;
+}
+.notes > p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #4f5665;
+}
+.reviewdiv {
+  display: flex;
+  margin: 0;
+  margin-top: 40px;
+  padding: 10px 30px;
+  width: 100%;
+  overflow-x: scroll;
+  margin-bottom: 100px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.forText {
+  padding: 10px;
+}
+.forText > p {
+  color: #555555;
+  font-size: 13px;
+}
+.reviewdiv::-webkit-scrollbar {
+  display: none; /* webkit browsers implementation */
+}
+.reviews {
+  width: 100%;
+  padding: 20px;
+}
+.reviews > h4 {
+  text-align: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+}
+.h1 {
+  text-align: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.review {
+  min-width: 300px;
+  margin: 10px 20px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+}
+.review > div > img {
+  width: 32px;
+  object-fit: contain;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+.inner {
+  flex: 1;
+  /* margin-left: 10px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 10px;
+  justify-content: space-between;
+  /* background-color: brown; */
+}
+.inner > h6 {
+  font-size: 15px;
+  font-family: Rubik;
+  margin: 0;
+  font-weight: 600;
+  color: black;
+}
+.inner > p {
+  font-size: 10px;
+  color: #555555;
+}
+.star {
+  flex: 0.2;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.star> img{
+    margin-top: -13px;
+    margin-left: 3px;
+}
+
+.add {
+  padding: 8px 20px;
+  border: none;
+  color: #fff;
+  background: #f53838;
+  font-family: Rubik;
+  text-align: center;
+  margin-top: 20px;
+}
+.add:hover {
+  opacity: 0.9;
+}
+
+/*  some style for features */
+.all {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  /* display: grid;
+  width: 100%; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
+  background-color: #f53838;
+  height: 100vh;
+  grid-gap: 50px 100px; */
+  /* align-items: stretch; */
+  /* justify-content: space-around; */
+}
+.box {
+  width: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  padding: 20px 12px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  box-shadow: 3px 4px 7px 3px #ccc;
+  transition: 0.5s ease-in;
+}
+.box:hover {
+  background: #efefef;
+  box-shadow: 1px 1px 3px 1px #ccc;
+}
+.box > img {
+  width: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.box > h4 {
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+
+  text-transform: uppercase;
+  color: #4f5665;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+}
+.box > p {
+  text-align: center;
+}
+.imgBx {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 150px; */
+}
+.imgBx > img {
+  width: 250px;
+  object-fit: contain;
+}
+.featureImg {
+  width: 100%;
+  object-fit: contain;
+}
+
+.con {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#featureCont {
+  display: flex;
+  /* background-color: #f53838; */
+  /* height: 200px; */
+}
+#ff {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #0b132a;
+}
+#subp {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 187% */
+
+  color: #4f5665;
+}
+
+.intro {
+  /* background-color: #fff; */
+  flex: 1;
+  padding: 60px;
+  padding-top: 100px;
+}
+.intro > ul > li {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.intro > ul > li > img {
+  width: 20px;
+  margin-top: -12px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+.intro > ul > li > p {
+  color: #4f5665;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
