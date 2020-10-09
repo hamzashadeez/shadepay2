@@ -46,32 +46,32 @@
         >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#home"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="features.html">Features</a>
+              <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="reviews.html">Reviews</a>
+              <a class="nav-link" href="#reviews">Reviews</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="#contact">Contact Us</a>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="board mt-4">
+      <div id="home" class="board mt-1 mb-1 sc">
         <div class="sides">
           <div class="notes">
-            <h1>Lorem ipsum dolor consectetur sit</h1>
+            <h1 class="dark">The fast, cheap way to make payments</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              praesentium quisquam eveniet incidunt ex. Qui saepe vel hic?
-              Cupiditate volu
+              ShadePay will allow you to make payments easily, as well as support your business
             </p>
-            <button class="explore shadow">Explore</button>
+            <a href="#newsletter" class="badge badge-danger px-5 py-3">Subscribe</a>
+            <!-- <i class="btn btn-danger">Subscribe</i> -->
+            <!-- <a href='#newsletter' class="explore badge shadow">Subscribe</a> -->
           </div>
         </div>
         <div class="sides">
@@ -79,7 +79,320 @@
         </div>
       </div>
 
-     
+      <div class="full sc">
+        <div class="s">
+            <div id='features' class="con">
+              <h1 class="h1 mb-4 dark">Features And Descriptions</h1>
+              <div id="featureCont">
+                <div style="flex: 1; padding: 60px">
+                  <img src="img/feature.png" class="flex-1 featureImg" />
+                </div>
+                <div class="intro">
+                    <h1 id="ff" >We Provide Many Features<br> You Can Use</h1>
+                    <p id="subp">You can explore the features that we provide which are<br> easy and simple to use</p>
+                    <ul>
+                        <li><img src="img/tick.png" alt="img"><p>Send Money</p></li>
+                        <li><img src="img/tick.png" alt="img"><p>Request For Money</p></li>
+                        <li><img src="img/tick.png" alt="img"><p>Split Payment</p></li>
+                        <li><img src="img/tick.png" alt="img"><p>Business Transactions</p></li>
+                        <li><img src="img/tick.png" alt="img"><p>Access To Our API</p></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+    
+              <!-- <div class="all mt-1">
+                <div class="box">
+                  <img src="img/send.png" alt="send" />
+                  <h4>Send</h4>
+                  <p>
+                    Send payements to friends and family instantly at cheaper price
+                  </p>
+                </div>
+                <div class="box">
+                  <img src="img/request.png" alt="send" />
+                  <h4>Request</h4>
+                  <p>
+                    Request for funds from your loved ones with just a click, or
+                    share your profile link to to get paid instantly
+                  </p>
+                </div>
+                <div class="box">
+                  <img src="img/split.png" alt="send" />
+                  <h4>Split</h4>
+                  <p>Split payments with family and friends without any worry</p>
+                </div>
+              </div>
+              <div class="all">
+                <div class="box">
+                  <img src="img/business.png" alt="send" />
+                  <h4>Business</h4>
+                  <p>
+                    Support your business with our payment platform, generate
+                    invoices, recieve payments using link, and many more.
+                  </p>
+                </div>
+                <div class="box">
+                  <img src="img/security.png" alt="send" />
+                  <h4>Security</h4>
+                  <p>
+                    Comprehensive security capabilities to keep your financial data
+                    safe and sound
+                  </p>
+                </div>
+                <div class="box">
+                  <img src="img/api.png" alt="send" />
+                  <h4 style="text-transform: inherit">APIs</h4>
+                  <p>
+                    APIs designed to offer an easy and effecient way to make and
+                    recieve payments
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div> -->
+      <!-- <div class="full">
+          
+      </div> -->
+      <div class="full sc">
+        <div id='reviews'class="reviews ">
+            <h4 class="dark">Users Review</h4>
+            <h6 class="subhead">
+              There are the reviews and comments from our users about the product
+            </h6>
+            <div
+              class="container w-100"
+              style="justify-content: center; display: flex; align-items: center"
+            >
+              <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                ADD YOUR REVIEW
+              </button>
+    
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title center-text" id="exampleModalLabel">
+                        Add Your Review
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1"
+                            >Full Name </label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Enter Your Full Name Here"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Enter Your Email Address"
+                          />
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        
+                       
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1"
+                            >Enter Your Review Here</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                          ></textarea>
+                        </div>
+                        <div>
+                            <button
+                            type="button"
+                            class="add"
+                            data-dismiss="modal"
+                          >
+                            Submit
+                          </button>      
+                            <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                          >
+                            Close
+                          </button>      
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviewdiv">
+              <div class="review">
+                <div class="header">
+                  <img src="img/rev.png" alt="rev" class="img-fluid" />
+                  <div class="inner">
+                    <h6>Hamza Shadeez</h6>
+                    <p>Katsina State, Nigeria</p>
+                  </div>
+                  <div class="star">
+                    <p>4.5</p>
+                    <img src="img/start.png" alt=''>
+                  </div>
+                </div>
+                <div class="forText">
+                  <p>
+                    Lorem I ipsum dolor sit amet consectetuolores sequi assumenda
+                    vitae nihil ut totam nobis itaque esse optio unde id, quo
+                    suscipit nemo, odit, laudantium pariatur sint cum.
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="header">
+                  <img src="img/rev.png" alt="rev" class="img-fluid" />
+                  <div class="inner">
+                    <h6>Hamza Shadeez</h6>
+                    <p>Katsina State, Nigeria</p>
+                  </div>
+                  <div class="star">
+                    <p>4.5</p>
+                    <img src="img/start.png" alt=''>
+                  </div>
+                </div>
+                <div class="forText">
+                  <p>
+                    Lorem I ipsum dolor sit amet consectetur adipisicing
+                    elit.laudantium pariatur sint cum.
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="header">
+                  <img src="img/rev.png" alt="rev" class="img-fluid" />
+                  <div class="inner">
+                    <h6>Hamza Shadeez</h6>
+                    <p>Katsina State, Nigeria</p>
+                  </div>
+                  <div class="star">
+                    <p>4.5</p>
+                    <img src="img/start.png" alt=''>
+                  </div>
+                </div>
+                <div class="forText">
+                  <p>
+                    Lorem I ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid dolores sequi assumenda vise optio unde id, quo suscipit
+                    nemo, odit, laudantium pariatur sint cum.
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="header">
+                  <img src="img/rev.png" alt="rev" class="img-fluid" />
+                  <div class="inner">
+                    <h6>Hamza Shadeez</h6>
+                    <p>Katsina State, Nigeria</p>
+                  </div>
+                  <div class="star">
+                    <p>4.5</p>
+                    <img src="img/start.png" alt=''>
+                  </div>
+                </div>
+                <div class="forText">
+                  <p>
+                    Lorem I ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid dolores unde id, quo suscipit nemo, odit, laudantium
+                    pariatur sint cum.
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <div class="header">
+                  <img src="img/rev.png" alt="rev" class="img-fluid" />
+                  <div class="inner">
+                    <h6>Hamza Shadeez</h6>
+                    <p>Katsina State, Nigeria</p>
+                  </div>
+                  <div class="star">
+                    <p>4.5</p>
+                    <img src="img/start.png" alt=''>
+                  </div>
+                </div>
+                <div class="forText">
+                  <p>
+                    Lorem I ipsum dolor sit ameAliquid dolores sequi assumenda vitae
+                    nihil ut totam nobis itaque esse optio unde id, quo suscipit
+                    nemo, odit, laudantium pariatur sint cum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="newsletter" class="bg-light">
+                <h2>Subscribe to our newsletter</h2>
+                <p id="ppp">Signup for our weekly newsletter to get the latest news, updates and amazing
+                    offers delivered directly in your inbox
+                </p>
+                <div style="display: flex;" class="mr-4">
+                    <input type="email" class="form-control mr-1" id="email" placeholder="Enter Your Email">
+                    <button class="btn btn-danger w-40">Subscribe</button>
+                </div>
+            </div>
+          <div class="footer mt-5">
+            <div>
+                <h5 class="text-light">About Us</h5>
+                <p style="color: #aaa">We make transactions easier and faster</p>
+            </div>
+            <div>
+                <h5 class="text-light">Helpful Links</h5>
+                <ul>
+                    <li>Services</li>
+                    <li>Supports</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-light">Information</h5>
+                <ul>
+                    <li>About US</li>
+                    <li>More Search</li>
+                    <li>Blog</li>
+                    <li>Testimonials</li>
+                    <li>Events</li>
+                </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
       <!-- bottom -->
     </div>
 

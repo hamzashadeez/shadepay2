@@ -28,7 +28,9 @@ body {
   line-height: 24px;
 }
 .board {
+  padding: 100px 20px;
   display: flex;
+  height: 100%;
 }
 .sides {
   flex: 1;
@@ -40,8 +42,10 @@ body {
   margin: 20px;
 }
 .explore {
+  text-decoration: none;
+
   border: none;
-  padding: 8px 38px;
+  padding: 8px 38px !important;
   border-radius: 5px;
   cursor: pointer;
   color: #fff;
@@ -63,6 +67,17 @@ body {
   font-weight: 500;
   font-size: 45px;
   line-height: 70px;
+  color: #0b132a;
+}
+h2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 70px;
+  color: #0b132a;
+}
+.dark {
   color: #0b132a;
 }
 .subhead {
@@ -172,9 +187,9 @@ body {
   justify-content: center;
   padding: 5px;
 }
-.star> img{
-    margin-top: -13px;
-    margin-left: 3px;
+.star > img {
+  margin-top: -13px;
+  margin-left: 3px;
 }
 
 .add {
@@ -315,3 +330,33 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
+
+#ppp {
+  color: #4f5665;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+.full {
+  height: 100vh;
+}
+
+.footer, #newsletter {
+  padding: 40px;
+}
+.footer{
+    background-color: #0b132a;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer > div > ul> li{
+    color: #aaa;
+    list-style: none;
+}
+.sc{
+    scroll-snap-align: start;
+}
+
