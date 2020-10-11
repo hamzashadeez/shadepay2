@@ -24,6 +24,7 @@ body {
   font-style: normal;
   font-weight: 300;
   color: #0b132a;
+  margin-left: 18px;
   font-size: 20px;
   line-height: 24px;
 }
@@ -101,7 +102,7 @@ h2 {
 .reviewdiv {
   display: flex;
   margin: 0;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   padding: 10px 30px;
   width: 100%;
   overflow-x: scroll;
@@ -210,6 +211,7 @@ h2 {
   display: flex;
   align-items: stretch;
   justify-content: space-around;
+  background: red;
   /* display: grid;
   width: 100%; */
   /* grid-template-columns: 1fr 1fr 1fr; */
@@ -343,20 +345,99 @@ h2 {
   height: 100vh;
 }
 
-.footer, #newsletter {
+.footer,
+#newsletter {
   padding: 40px;
 }
-.footer{
-    background-color: #0b132a;
+.footer {
+  background-color: #0b132a;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer > div > ul > li {
+  color: #aaa;
+  list-style: none;
+}
+
+#logo {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.b {
+  height: 210px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+}
+
+.forBox {
+  display: flex;
+  /* height: 40vh; */
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.padd{
+  flex: 1; padding: 60px
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0%;
+    padding: 0%;
+    /* background-color: blue; */
+  }
+  .board {
     display: flex;
-    justify-content: space-evenly;
-}
+    flex-direction: column-reverse;
+  }
+  .board > .sides > .notes > h1 {
+    font-size: 25px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  .con > .h1 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+  }
+  #featureCont{
+    flex-direction: column;
+  }
+  .intro {
+    padding-top: 10px;
+  }
+  .intro > #ff{
+    font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  }
+  .padd{
+    padding: 10px;
+    flex: .5
+  }
+  .intro > #subp{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .forBox{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .forBox > .b {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  /* margin-top: 10px; */
 
-.footer > div > ul> li{
-    color: #aaa;
-    list-style: none;
 }
-.sc{
-    scroll-snap-align: start;
-}
-

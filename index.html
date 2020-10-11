@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -21,7 +22,7 @@
           >
             <img
               src="img/logo.png"
-              class=""
+              id='logo'
               style="width: 32px; margin-right: 5px"
               alt="img"
             />
@@ -75,32 +76,89 @@
           </div>
         </div>
         <div class="sides">
-          <img src="img/img.png" alt="illustration" />
+          <img src="img/img.png" class="imgcont" alt="illustration" />
         </div>
       </div>
 
-      <div class="full sc">
-        <div class="s">
-            <div id='features' class="con">
-              <h1 class="h1 mb-4 dark">Features And Descriptions</h1>
-              <div id="featureCont">
-                <div style="flex: 1; padding: 60px">
-                  <img src="img/feature.png" class="flex-1 featureImg" />
-                </div>
-                <div class="intro">
-                    <h1 id="ff" >We Provide Many Features<br> You Can Use</h1>
-                    <p id="subp">You can explore the features that we provide which are<br> easy and simple to use</p>
-                    <ul>
-                        <li><img src="img/tick.png" alt="img"><p>Send Money</p></li>
-                        <li><img src="img/tick.png" alt="img"><p>Request For Money</p></li>
-                        <li><img src="img/tick.png" alt="img"><p>Split Payment</p></li>
-                        <li><img src="img/tick.png" alt="img"><p>Business Transactions</p></li>
-                        <li><img src="img/tick.png" alt="img"><p>Access To Our API</p></li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-    
+      
+        
+    <div id='features' class="con mb-4">
+      <h1 class="h1 mb-4 dark">Features And Descriptions</h1>
+      <div id="featureCont">
+        <div class="padd">
+          <img src="img/feature.png" class="flex-1 featureImg" />
+        </div>
+        <div class="intro">
+            <h1 id="ff" >We Provide Many Features<br> You Can Use</h1>
+            <p id="subp">You can explore the features that we provide which are<br> easy and simple to use</p>
+            <ul>
+                <li><img src="img/tick.png" alt="img"><p>Send Money</p></li>
+                <li><img src="img/tick.png" alt="img"><p>Request For Money</p></li>
+                <li><img src="img/tick.png" alt="img"><p>Split Payment</p></li>
+                <li><img src="img/tick.png" alt="img"><p>Business Transactions</p></li>
+                <li><img src="img/tick.png" alt="img"><p>Access To Our API</p></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+              <div class="mt-1 row forBox">
+                  <div class="bg-light b col-md-3 box col-sm-12">
+                    <img src="img/send.png" alt="send" />
+                    <div class="services">
+                      <h4>Send</h4>
+                    <p>
+                      Send payments to friends and family instantly at cheaper price
+                    </p>
+                    </div>
+                  </div>
+
+                  <div class="bg-light b col-md-3 box col-sm-12">
+                    <img src="img/request.png" alt="send" />
+                    <div class="services">
+                      <h4>Request</h4>
+                      <p>
+                        Request for funds from your loved ones with just a click, or
+                        share your profile link to to get paid instantly
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="bg-light b col-md-3 box col-sm-12">
+                    <img src="img/split.png" alt="send" />
+                    <div class="services">
+                      <h4>Split</h4>
+                      <p>Split payments with family and friends without any worry</p>
+                    </div>
+                  </div>
+
+                  </div>
+              <div class="mt-1 row forBox">
+                  <div class="bg-light b col-md-3 box col-sm-12">
+                    <img src="img/send.png" alt="send" />
+                    <div class="services">
+                      <h4>Send</h4>
+                    <p>
+                      Send payments to friends and family instantly at cheaper price
+                    </p>
+                    </div>
+                  </div>
+
+               
+
+                  <div class="bg-light b col-md-3 box col-sm-12">
+                    <img src="img/split.png" alt="send" />
+                    <div class="services">
+                      <h4>Split</h4>
+                      <p>Split payments with family and friends without any worry</p>
+                    </div>
+                  </div>
+
+                  </div>
+             
+              
+        
+
               <!-- <div class="all mt-1">
                 <div class="box">
                   <img src="img/send.png" alt="send" />
@@ -155,7 +213,7 @@
       <!-- <div class="full">
           
       </div> -->
-      <div class="full sc">
+      <div class="">
         <div id='reviews'class="reviews ">
             <h4 class="dark">Users Review</h4>
             <h6 class="subhead">
